@@ -4,7 +4,7 @@ Um jogo de cartas estilo Super Trunfo sobre aves brasileiras.
 
 ## Sobre o Jogo
 
-BrAVIdex é um jogo de cartas que utiliza um baralho de aves brasileiras. Cada carta representa uma ave e contém informações como força, ameaça, peso, nível trófico e ano de descoberta.
+BrAVIdex é um jogo de cartas que utiliza um baralho de aves brasileiras. Cada carta representa uma ave e contém informações como força, ameaça, peso, nível trófico, ano de descoberta e agilidade.
 
 ### Como jogar:
 
@@ -52,7 +52,8 @@ Para adicionar novas cartas ao jogo, siga estes passos:
     "ameaca": 3, // valor de 1 a 10
     "peso": 150, // em gramas
     "trofico": 2, // nível trófico de 1 a 5
-    "ano": 1800 // ano de descoberta científica
+    "ano": 1800, // ano de descoberta científica
+    "agilidade": 7 // valor numérico, maior é melhor
 }
 ```
 
