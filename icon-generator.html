@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Ícones BrAVIdex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerador de Ícones BrAVIdex</h1>
+    
+    <div class="controls">
+        <button id="generate192">Gerar ícone 192x192</button>
+        <button id="generate512">Gerar ícone 512x512</button>
+    </div>
+    
+    <canvas id="canvas" width="512" height="512"></canvas>
+    
+    <div>
+        <a id="download" download="icon.png">Clique com o botão direito na imagem e selecione "Salvar imagem como..."</a>
+    </div>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const downloadLink = document.getElementById('download');
+        
+        // Funções para desenhar o ícone
+        function drawIcon(size) {
+            // Redimensionar o canvas
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Cores
+            const green = '#4CAF50';
+            const darkGreen = '#388E3C';
+            const yellow = '#FFC107';
+            
+            // Fundo
+            ctx.fillStyle = green;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Círculo de fundo
+            ctx.fillStyle = darkGreen;
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size * 0.4, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Silhueta de pássaro
+            ctx.fillStyle = '#FFFFFF';
+            
+            // Corpo principal do pássaro
+            ctx.beginPath();
+            ctx.ellipse(size * 0.5, size * 0.5, size * 0.25, size * 0.15, 0, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Cabeça do pássaro
+            ctx.beginPath();
+            ctx.arc(size * 0.65, size * 0.4, size * 0.12, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Bico
+            ctx.fillStyle = yellow;
+            ctx.beginPath();
+            ctx.moveTo(size * 0.75, size * 0.38);
+            ctx.lineTo(size * 0.85, size * 0.4);
+            ctx.lineTo(size * 0.75, size * 0.42);
+            ctx.fill();
+            
+            // Asa
+            ctx.fillStyle = darkGreen;
+            ctx.beginPath();
+            ctx.ellipse(size * 0.5, size * 0.52, size * 0.18, size * 0.1, Math.PI * 0.15, 0, Math.PI);
+            ctx.fill();
+            
+            // Olho
+            ctx.fillStyle = '#000000';
+            ctx.beginPath();
+            ctx.arc(size * 0.68, size * 0.37, size * 0.03, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Texto "BR"
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = `bold ${size * 0.15}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.fillText("BR", size * 0.5, size * 0.7);
+            
+            // Texto "AVIdex"
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = `bold ${size * 0.12}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.fillText("AVIdex", size * 0.5, size * 0.82);
+            
+            // Atualizar o link de download
+            downloadLink.href = canvas.toDataURL('image/png');
+            downloadLink.download = `icon-${size}x${size}.png`;
+        }
+        
+        // Event listeners
+        document.getElementById('generate192').addEventListener('click', () => drawIcon(192));
+        document.getElementById('generate512').addEventListener('click', () => drawIcon(512));
+        
+        // Desenhar ícone inicial
+        drawIcon(512);
+    </script>
+</body>
+</html> 

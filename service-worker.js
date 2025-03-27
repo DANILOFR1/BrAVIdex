@@ -18,8 +18,9 @@ const ASSETS_TO_CACHE = [
   '/public/images/coruja.jpg',
   '/public/images/joao-de-barro.jpg',
   '/public/images/pica-pau.jpg',
-  '/public/icon-192x192.png',
-  '/public/icon-512x512.png',
+  '/public/images/icon-192x192.png',
+  '/public/images/icon-512x512.png',
+  '/public/images/icon.png',
   '/public/favicon.ico'
 ];
 
