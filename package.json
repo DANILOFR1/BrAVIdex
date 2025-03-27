@@ -1,0 +1,16 @@
+{
+  "name": "bravidex",
+  "version": "1.0.0",
+  "description": "O Card Game das Aves Brasileiras",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s ."
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
+    "serve": "^14.2.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

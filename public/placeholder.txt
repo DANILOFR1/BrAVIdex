@@ -1,0 +1,20 @@
+Este é um arquivo de placeholder.
+
+As imagens das aves devem ser colocadas na pasta public/images com os seguintes nomes:
+- ararajuba.jpg
+- tuiuiu.jpg
+- sabia.jpg
+- beija-flor.jpg
+- tucano.jpg
+- bem-te-vi.jpg
+- flamingo.jpg
+- harpia.jpg
+- arara-azul.jpg
+- coruja.jpg
+- joao-de-barro.jpg
+- pica-pau.jpg
+
+Os ícones do PWA devem ser colocados aqui com os nomes:
+- icon-192x192.png
+- icon-512x512.png
+- favicon.ico 

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Como Jogar - BrAVIdex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="public/images/icon.png" type="image/png">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .manual-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .manual-title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .manual-section {
+            margin-bottom: 2rem;
+        }
+        
+        .manual-section h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            opacity: 1;
+        }
+        
+        .manual-section p {
+            margin-bottom: 1rem;
+        }
+        
+        .manual-list {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .manual-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f4ff;
+            border-left: 4px solid #5c6bc0;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .attribute-example {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .attribute-card {
+            background-color: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+        
+        .attribute-name {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        @media (max-width: 600px) {
+            .manual-container {
+                padding: 1rem;
+                margin-top: 0.5rem;
+            }
+            
+            .manual-title {
+                font-size: 1.8rem;
+            }
+            
+            .attribute-example {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>BrAVIdex</h1>
+            <h2>O Card Game das Aves Brasileiras</h2>
+            <div class="author-credit">By Danilo Freitas Rangel @biologorangel</div>
+        </div>
+    </header>
+    
+    <main>
+        <a href="index.html" class="back-button">← Voltar ao Jogo</a>
+        
+        <div class="manual-container">
+            <h1 class="manual-title">Manual de Como Jogar BrAVIdex</h1>
+            
+            <div class="manual-section">
+                <h2>Introdução</h2>
+                <p>BrAVIdex é um jogo de cartas educativo sobre aves brasileiras. Além de divertido, proporciona aprendizado sobre a diversa avifauna do Brasil. O jogo pode ser jogado por 2 jogadores.</p>
+            </div>
+            
+            <div class="manual-section">
+                <h2>Objetivo do Jogo</h2>
+                <p>O objetivo é marcar 5 pontos primeiro, vencendo rodadas através da comparação de atributos das aves.</p>
+            </div>
+            
+            <div class="manual-section">
+                <h2>Conteúdo</h2>
+                <ul class="manual-list">
+                    <li>Cartas de aves brasileiras (coleção em constante expansão)</li>
+                    <li>Cada carta contém informações como nome popular, nome científico e 5 atributos</li>
+                </ul>
+            </div>
+            
+            <div class="manual-section">
+                <h2>Atributos das Cartas</h2>
+                <p>Cada carta possui 6 atributos diferentes:</p>
+                
+                <div class="attribute-example">
+                    <div class="attribute-card">
+                        <div class="attribute-name">Força Emblemática</div>
+                        <div class="attribute-desc">Valor numérico</div>
+                        <div class="attribute-tip">Maior é melhor</div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <div class="attribute-name">Ameaça</div>
+                        <div class="attribute-desc">Valor numérico</div>
+                        <div class="attribute-tip">Maior é melhor</div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <div class="attribute-name">Peso</div>
+                        <div class="attribute-desc">Em gramas</div>
+                        <div class="attribute-tip">Maior é melhor</div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <div class="attribute-name">Poder Trófico</div>
+                        <div class="attribute-desc">Valor numérico</div>
+                        <div class="attribute-tip">Maior é melhor</div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <div class="attribute-name">Ano da publicação</div>
+                        <div class="attribute-desc">Ano de descoberta</div>
+                        <div class="attribute-tip">Maior é melhor</div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <div class="attribute-name">Agilidade</div>
+                        <div class="attribute-desc">Valor numérico</div>
+                        <div class="attribute-tip">Maior é melhor</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="manual-section">
+                <h2>Como Jogar</h2>
+                <ol class="manual-list">
+                    <li>Cada jogador recebe 3 cartas aleatórias no início da rodada.</li>
+                    <li>Cada jogador escolhe uma carta entre as três recebidas.</li>
+                    <li>Um dos jogadores escolhe um atributo para comparar.</li>
+                    <li>Os jogadores revelam suas cartas e comparam o atributo escolhido.</li>
+                    <li>O jogador com o valor mais alto no atributo escolhido vence a rodada e marca um ponto.</li>
+                    <li>Uma nova rodada começa com novas cartas.</li>
+                </ol>
+            </div>
+            
+            <div class="manual-section">
+                <h2>Fim do Jogo</h2>
+                <p>O jogo termina quando um jogador atingir 5 pontos, sendo declarado o vencedor.</p>
+            </div>
+            
+            <div class="manual-section">
+                <h2>Dicas Estratégicas</h2>
+                <ul class="manual-list">
+                    <li>Observe atentamente todos os atributos da sua carta escolhida antes de selecionar qual usar.</li>
+                    <li>Compare os valores dos atributos entre suas três cartas para fazer a melhor escolha.</li>
+                    <li>Para o atributo "Ano da publicação", lembre-se que o maior valor vence (ave descoberta mais recentemente).</li>
+                    <li>Aproveite o jogo para aprender sobre as aves brasileiras!</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <p>BrAVIdex não é apenas um jogo, mas uma ferramenta para conhecer e valorizar a rica biodiversidade de aves do Brasil. Divirta-se aprendendo!</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>BrAVIdex - Aprenda sobre as aves brasileiras e divirta-se!</p>
+        <p>BrAVIdex by Danilo Freitas Rangel is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license">CC BY-SA 4.0</a></p>
+    </footer>
+</body>
+</html> 

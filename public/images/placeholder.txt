@@ -1,0 +1,17 @@
+Este é um arquivo de placeholder para as imagens das aves.
+
+As imagens devem ser colocadas aqui com os seguintes nomes:
+- ararajuba.jpg
+- tuiuiu.jpg
+- sabia.jpg
+- beija-flor.jpg
+- tucano.jpg
+- bem-te-vi.jpg
+- flamingo.jpg
+- harpia.jpg
+- arara-azul.jpg
+- coruja.jpg
+- joao-de-barro.jpg
+- pica-pau.jpg
+
+Observação: Utilize imagens com proporção aproximada de 3:2 (largura:altura), idealmente com tamanho em torno de 600x400 pixels. 
