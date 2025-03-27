@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Como Jogar - BrAVIdex</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="public/images/icon.png" type="image/png">
     <style>
         body {
@@ -234,5 +236,20 @@
         <p>BrAVIdex - Aprenda sobre as aves brasileiras e divirta-se!</p>
         <p>BrAVIdex by Danilo Freitas Rangel is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license">CC BY-SA 4.0</a></p>
     </footer>
+    
+    <script>
+        // Registrar o service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado com sucesso:', registration);
+                    })
+                    .catch(error => {
+                        console.error('Falha ao registrar o Service Worker:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html> 
